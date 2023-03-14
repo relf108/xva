@@ -47,7 +47,7 @@ impl ArithmeticOperator for SubtractionOperator {
     }
     
     fn get_associativity(&self) -> Associativity {
-        return Associativity::Left.clone().clone();
+        return Associativity::Left;
     }
     
     fn eval(&self, lhs: Value, rhs: Value) -> Value {
@@ -75,7 +75,7 @@ impl ArithmeticOperator for MultiplicationOperator {
     }
     
     fn get_associativity(&self) -> Associativity {
-        return Associativity::Left.clone();
+        return Associativity::Left;
     }
 
     fn eval(&self, lhs: Value, rhs: Value) -> Value {
@@ -103,7 +103,7 @@ impl ArithmeticOperator for DivisionOperator {
     }
     
     fn get_associativity(&self) -> Associativity {
-        return Associativity::Left.clone();
+        return Associativity::Left;
     }
     
     fn eval(&self, lhs: Value, rhs: Value) -> Value {
@@ -131,7 +131,7 @@ impl ArithmeticOperator for ExponentiationOperator {
     }
     
     fn get_associativity(&self) -> Associativity {
-        return Associativity::Right.clone();
+        return Associativity::Right;
     }
 
     fn eval(&self, lhs: Value, rhs: Value) -> Value {
